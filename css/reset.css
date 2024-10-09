@@ -1,15 +1,30 @@
 @charset "uft-8";
 
 /* reset */
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pretendard";
+  font-weight: 400;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
 }
 li {
   list-style: none;

@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JK데이터시스템즈</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <!-- header nav -->
     <header id="header">
-      <div class="header-wrap">
+      <div class="container">
         <a href="#">
           <img src="images/logos/jkds_logo.svg" alt="JK데이터시스템즈_로고" />
         </a>
-        <nav class="navbar">
+        <div class="header-navbar">
           <ul>
             <li>
               <a href="#">ABOUT</a>
@@ -29,9 +39,11 @@
               <a href="#">CONTACT</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
+
+    <!-- main -->
     <div id="main">
       <div class="main-slide">
         <div class="main-slide-wrap">
@@ -41,12 +53,665 @@
             </h1>
             <h3 class="main-slide-sub-title">제이케이데이터시스템즈</h3>
           </div>
-          <div class="main-slide-mask"></div>
+          <div class="background-mask"></div>
           <div class="main-slide-img"></div>
         </div>
       </div>
     </div>
-    <div id="business"></div>
+
+    <!-- business -->
+    <div id="business">
+      <div class="background-mask"></div>
+      <div class="business">
+        <div class="container business-wrap">
+          <div class="business-title-wrap">
+            <h1 class="business-title">BUSINESS</h1>
+            <h3 class="business-sub-title">
+              차별화된 노하우와 풍부한 기술력으로 최적의 시스템을 제공합니다.
+            </h3>
+          </div>
+          <div class="row business-circle-wrap">
+            <div class="col-12 col-sm-6 col-lg-4 business-circle">
+              <img
+                src="/images/icons/jkds-main-business-si-icon.svg"
+                alt="SI SOLUTION"
+              />
+              <h4 class="business-circle-title">SI SOLUTION</h4>
+              <div class="business-circle-contents">
+                <h6>이동지역 모바일 안전관리 시스템</h6>
+                <h6>문화유산표준관리시스템</h6>
+                <h6>AI기반 검색 기능 시스템</h6>
+                <h6>모듈형 전시안내관리 시스템</h6>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 business-circle">
+              <img
+                src="/images/icons/jkds-main-business-it-icon.svg"
+                alt="IT SERVICE"
+              />
+              <h4 class="business-circle-title">IT SERVICE</h4>
+              <div class="business-circle-contents">
+                <h6>시스템 구축</h6>
+                <h6>ITO</h6>
+                <h6>시스템 유지보수</h6>
+                <h6>컨설팅</h6>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 business-circle">
+              <img
+                src="/images/icons/jkds-main-business-product-icon.svg"
+                alt="PRODUCT"
+              />
+              <h4 class="business-circle-title">PRODUCT</h4>
+              <div class="business-circle-contents">
+                <h6>ARTVIEW</h6>
+                <h6>VDEX</h6>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 business-circle">
+              <img
+                src="/images/icons/jkds-main-business-contents-icon.svg"
+                alt="CONTENTS"
+              />
+              <h4 class="business-circle-title">CONTENTS</h4>
+              <div class="business-circle-contents">
+                <h6>콘텐츠 기획</h6>
+                <h6>일러스트 제작</h6>
+                <h6>동영상 제작</h6>
+                <h6>3D 모델링</h6>
+                <h6>AR/VR/MR 제작</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- solution -->
+    <div id="solution">
+      <div class="container">
+        <div class="main-title-wrap">
+          <div class="main-title">SOLUTION</div>
+        </div>
+        <div class="row g-0">
+          <div class="col-12 col-xl-6 solution-slide-left">
+            <div>
+              <h2>이동지역 모바일 안전관리 시스템</h2>
+              <div class="solution-slide-tag">
+                <div>#FOD 점검관리</div>
+                <div>#GIS 연동 기능</div>
+                <div>#장애파손 관리 기능</div>
+                <div>#보안기능 강화</div>
+              </div>
+              <div class="solution-slide-contents">
+                <div>
+                  기존 통합 정보 시스템의 이동지역관리 모듈인 차량 장비 관리,
+                  안전 점검 활동 및 야생 동물 관리를 별도로 분리하여 모바일망을
+                  구성하여 현장 업무용 모바일 서비스를 구축합니다.
+                </div>
+                <div>
+                  안전 관리를 담당하는 현장 점검자 및 항공사/조업사에게 원활한
+                  현장 업무 지원 및 현장 실시간 정보 서비스를 24*265 제공하여
+                  업무의 효율성 증대 및 향상된 서비스를 구현합니다.
+                </div>
+              </div>
+            </div>
+            <div>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 solution-slide-right">
+            <img
+              src="/images/images/jkds-main-solution-img01.png"
+              alt="이동지역 모바일 안전관리 시스템"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile -->
+    <div id="mobile">
+      <div class="main-title-wrap">
+        <div class="main-title">MOBILE</div>
+        <div class="main-sub-title">
+          차별화된 노하우와 풍부한 기술력으로 최적의 시스템을 제공합니다.
+        </div>
+      </div>
+      <!-- 국립중앙박물관 전시안내 앱 -->
+      <div class="mobile-background">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                src="/images/images/jkds-main-mobile-img01.png"
+                alt="국립중앙박물관 전시안내 앱"
+                class="mobile-img"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mobile-contents-right">
+                <div class="mobile-contents">
+                  <div>
+                    <h4>신규 다국어 AR 콘텐츠 서비스 개발</h4>
+                    <h2>국립중앙박물관 전시 안내 앱</h2>
+                  </div>
+                  <div>
+                    <h5>통합운영관리 기능 강화 및 다국어 콘텐츠 확대를 통해</h5>
+                    <h3>관람객의 증대 및 국립박물관의 세계화 지향</h3>
+                  </div>
+                  <div>
+                    <h5>국립중앙박물관 전시 안내 앱 다국어 확대</h5>
+                    <h5>신규 다국어 AR 콘텐츠 추가 개발 및 콘텐츠 강화</h5>
+                    <h5>앱 활성화를 위한 홍보 기능 및 설문 조사 기능 개발</h5>
+                    <h5>국립중앙박물관 전시 안내 앱 보안성 강화</h5>
+                  </div>
+                </div>
+                <div class="mobile-contents-link">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=or.kr.nationalmuseum&hl=ko"
+                    target="_blank"
+                  >
+                    <img
+                      src="/images/images/google_banner.svg"
+                      alt="모바일 국립중앙박물관 전시안내 구글스토어 배너"
+                    />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/kr/app/%EA%B5%AD%EB%A6%BD%EB%B0%95%EB%AC%BC%EA%B4%80-%EC%A0%84%EC%8B%9C%EC%95%88%EB%82%B4/id1190014470"
+                    target="_blank"
+                  >
+                    <img
+                      src="/images/images/app_store_banner.svg"
+                      alt="모바일 국립중앙박물관 전시안내 앱스토어 링크"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 스터디웨이 자격증 앱 -->
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <div class="mobile-contents-right">
+                <div class="mobile-contents">
+                  <div>
+                    <h4>자격증 기출문제 서비스 개발</h4>
+                    <h2>스터디웨이 자격증 교육 앱</h2>
+                  </div>
+                  <div>
+                    <h5>
+                      공무원, 자격증, 한국사, 운전면허 등 다양한 기출 문제
+                      제공을 통한
+                    </h5>
+                    <h3>자격증 기출문제 되새김 듣기학습</h3>
+                  </div>
+                  <div>
+                    <h5>약 300여개의 자격증 시험 등의 기출 문제 제공</h5>
+                    <h5>강사가 직접 작성한 해설집, 요약집을 활용</h5>
+                    <h5>다른 학습자의 오답노트, 공유 노트 이용 가능</h5>
+                    <h5>음성 서비스를 통한 문제 암기 풀이 도움</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 text-md-end order-1 order-md-2">
+              <img
+                src="/images/images/jkds-main-mobile-img02.png"
+                alt="스터디웨이 자격증 앱"
+                class="mobile-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 이동지역 인천공항 앱 -->
+      <div class="mobile-background">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img
+                src="/images/images/jkds-main-mobile-img03.png"
+                alt="이동지역 인천공항 앱"
+                class="mobile-img"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mobile-contents-right">
+                <div class="mobile-contents">
+                  <div>
+                    <h4>현장 업무용 모바일 서비스 개발</h4>
+                    <h2>인천공항 이동지역 앱</h2>
+                  </div>
+                  <div>
+                    <h5>
+                      현장 중심의 24*365 이동지역 현장관리 모바일 서비스 구현을
+                      통한
+                    </h5>
+                    <h3>국제 허브 공항으로서의 안전 경쟁력 강화</h3>
+                  </div>
+                  <div>
+                    <h5>안전관리 활동 시 GIS 기반 자료입력 서비스 구축</h5>
+                    <h5>
+                      이동지역관리 모듈 클라우드 시스템 포팅 지원 및 연동 API
+                      개발
+                    </h5>
+                    <h5>이벤트 발생 시 실시간 상황 전파</h5>
+                    <h5>촬영 사진, 동영상 보안 공간 처리</h5>
+                  </div>
+                </div>
+                <div class="mobile-contents-link">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=kr.airport.iiacsafe_comm"
+                    target="_blank"
+                  >
+                    <img
+                      src="/images/images/google_banner.svg"
+                      alt="모바일 이동지역 인천공항 구글스토어 배너"
+                    />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/kr/app/iiac%EC%9D%B4%EB%8F%99%EC%A7%80%EC%97%AD/id1528462273"
+                    target="_blank"
+                  >
+                    <img
+                      src="/images/images/app_store_banner.svg"
+                      alt="모바일 이동지역 인천공항 앱스토어 링크"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- video -->
+    <div id="video">
+      <div class="container">
+        <div class="main-title-wrap">
+          <div class="main-title">VIDEO</div>
+        </div>
+        <div class="video-contents-wrap">
+          <a
+            href="https://www.youtube.com/@%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EC%9B%90/featured"
+            target="_blank"
+          >
+            + 더보기
+          </a>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=18Fxikx7o-o"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail01.png"
+                    alt="디스커버원 국립제주박물관 화살촉 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립제주박물관</div>
+                <div class="video-cotents-subtitle">화살촉</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=MRa7NWnHEXM"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail02.png"
+                    alt="디스커버원 국립부여박물관 백제 금동대향로 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립부여박물관</div>
+                <div class="video-cotents-subtitle">
+                  백제 금동대향로 살펴보기
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=ZDl5FRtUt6U"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail03.png"
+                    alt="디스커버원 국립춘천박물관 토기 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립춘천박물관</div>
+                <div class="video-cotents-subtitle">토기</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/@%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EC%9B%90/featured"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail04.png"
+                    alt="디스커버원 국립제주박물관 수정사 터 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립제주박물관</div>
+                <div class="video-cotents-subtitle">
+                  수정사 터에서 출토된 탑의 면석
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=7b266xWpaXs"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail05.png"
+                    alt="디스커버원 국립전주박물관 기목항아리와 그릇받침 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립전주박물관</div>
+                <div class="video-cotents-subtitle">기목항아리와 그릇받침</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=__kZDFpWBM0"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail06.png"
+                    alt="디스커버원 국립부여박물관 반달돌칼 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립부여박물관</div>
+                <div class="video-cotents-subtitle">반달돌칼</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=Y29BeBufAi4"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail07.png"
+                    alt="디스커버원 국립제주박물관 고산리식 토기 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">국립제주박물관</div>
+                <div class="video-cotents-subtitle">고산리식 토기</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="video-contents-img">
+                <a
+                  href="https://www.youtube.com/watch?v=i5EVHouS7zU"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/images/jkds-main-video-thumnail08.png"
+                    alt="디스커버원 전쟁기념관 피묻은 태극기 썸네일 이미지"
+                  />
+                </a>
+              </div>
+              <div class="video-cotents">
+                <div class="video-cotents-title">전쟁기념관</div>
+                <div class="video-cotents-subtitle">피묻은 태극기</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- clients -->
+    <div id="clients">
+      <div class="container">
+        <div class="main-title-wrap">
+          <div class="main-title">CLIENTS</div>
+        </div>
+        <div class="clients-wrap">
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립현대미술관_로고.svg"
+              alt="국립현대미술관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립중앙박물관_로고.svg"
+              alt="국립중앙박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/Air_Premia_로고.svg"
+              alt="AirPremia 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/SmartPort_로고.svg"
+              alt="SmartPort 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립한국문학관_로고.svg"
+              alt="국립한국문학관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립민속박물관_로고.svg"
+              alt="국립민속박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립국악원_로고.svg"
+              alt="국립국악원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립중앙도서관_로고.svg"
+              alt="국립중앙도서관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/KOMACON_로고.svg"
+              alt="한국만화영상진흥원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/한국전기안전공사_로고.svg"
+              alt="한국전기안전공사 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/전북_콘텐츠융합진흥원_로고.svg"
+              alt="전북 콘텐츠융합진흥원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/문화체육관광부_로고.svg"
+              alt="문화체육관광부 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/한국정보화진흥원_로고.svg"
+              alt="한국정보화진흥원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립아시아문화전당_로고.svg"
+              alt="국립아시아문화전당 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img src="/images/logos/clients/KOICA_로고.svg" alt="KOICA 로고" />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/koscom_로고.svg"
+              alt="koscom 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/교보증권_로고.svg"
+              alt="교보증권 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국기원_로고.svg"
+              alt="국기원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/NH농협캐피탈_로고.svg"
+              alt="NH농협캐피탈 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/NPS_국민연금_로고.svg"
+              alt="NPS 국민연금 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/남원시청_로고.svg"
+              alt="남원시청 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/임실군청_로고.svg"
+              alt="임실군청 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/전주예수병원_로고.svg"
+              alt="전주예수병원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/전주정보문화산업진흥원_로고.svg"
+              alt="전주정보문화산업진흥원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립무형유산원_로고.svg"
+              alt="국립무형유산원 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립농업박물관_로고.svg"
+              alt="국립농업박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립항공박물관_로고.svg"
+              alt="국립항공박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립스포츠박물관_로고.svg"
+              alt="국립스포츠박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립등대박물관_로고.svg"
+              alt="국립등대박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/증권박물관_로고.svg"
+              alt="증권박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/한국은행_화폐박물관_로고.svg"
+              alt="한국은행 화폐박물관 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/MUSEUM_G_로고.svg"
+              alt="MUSEUM G 로고"
+            />
+          </div>
+          <div class="clients-list">
+            <img
+              src="/images/logos/clients/국립한글박물관_로고.svg"
+              alt="국립한글박물관 로고"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- work experience -->
+    <div id="work-experience">
+      <div class="work-experience-background">
+        <div class="container">
+          <div class="main-title-wrap">
+            <div class="main-title white">WORK EXPERIENCE</div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+
+    <!-- footer -->
     <footer></footer>
   </body>
 </html>
