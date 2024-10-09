@@ -1,0 +1,29 @@
+@charset "uft-8";
+
+/* body */
+body {
+  font-family: "Pretendard", "sans-serif";
+}
+
+/* font */
+h1 {
+  font-size: 3.125rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.625rem;
+}
+h5 {
+  font-size: 1.125rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  font-size: 0.875rem;
+}
