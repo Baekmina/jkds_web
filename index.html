@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JK데이터시스템즈</title>
-    <!-- css -->
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,6 +17,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -704,14 +710,167 @@
           <div class="main-title-wrap">
             <div class="main-title white">WORK EXPERIENCE</div>
           </div>
-          <div></div>
+          <div class="work-experience-years-container">
+            <ul class="work-experience-years-wrap">
+              <li class="work-experience-years" data-year="2023"></li>
+              <li class="work-experience-years active" data-year="2022"></li>
+              <li class="work-experience-years" data-year="2021"></li>
+              <li class="work-experience-years" data-year="2020"></li>
+              <li class="work-experience-years" data-year="2019"></li>
+              <li class="work-experience-years" data-year="2018"></li>
+              <li class="work-experience-years" data-year="2017"></li>
+              <li class="work-experience-years" data-year="2016"></li>
+              <li class="work-experience-years" data-year="2015"></li>
+            </ul>
+            <!-- 모바일 탭 -->
+            <div class="work-experience-years-mobile">
+              <div class="tab">
+                <div class="tab-item">2023</div>
+                <div class="tab-item active">2022</div>
+                <div class="tab-item">2021</div>
+                <div class="tab-item">2020</div>
+                <div class="tab-item">2019</div>
+                <div class="tab-item">2018</div>
+                <div class="tab-item">2017</div>
+                <div class="tab-item">2016</div>
+                <div class="tab-item">2015</div>
+              </div>
+            </div>
+            <!-- 연도별 내용 -->
+            <ul class="work-experience-years-contents-wrap">
+              <li style="transform: translateY(0px); opacity: 1">
+                <div>
+                  <h5>2022.11</h5>
+                  <h6>
+                    국립현대미술관 정보서비스 유지관리<br />
+                    국립민속박물관 보존과학실 프로그램 통합유지관리 용역<br />
+                    국립국악원 정보시스템 통합유지관리 (2차)
+                  </h6>
+                </div>
+              </li>
+              <li style="transform: translateY(0px); opacity: 1">
+                <div>
+                  <h5>2022.10</h5>
+                  <h6>
+                    전라북도콘텐츠융합진흥원 고서 공동번역 스마트워크 플랫폼
+                    구축 및 실증용역
+                  </h6>
+                </div>
+              </li>
+              <li style="transform: translateY(0px); opacity: 1">
+                <div>
+                  <h5>2022.08</h5>
+                  <h6>국립현대미술관 소장품관리시스템 고도화</h6>
+                </div>
+              </li>
+              <li style="transform: translateY(0px); opacity: 1">
+                <div>
+                  <h5>2022.07</h5>
+                  <h6>
+                    국립중앙박물관 박물관 전시안내 앱 보안 강화 및 클라우드 전환
+                  </h6>
+                </div>
+              </li>
+              <li style="transform: translateY(0px); opacity: 1">
+                <div>
+                  <h5>2022.02</h5>
+                  <h6>
+                    전라북도콘텐츠융합진흥원 홀로그램 기반 문화재 복원 및 가시화
+                    서비스 사업화 실증
+                  </h6>
+                </div>
+              </li>
+              <li style="transform: translateY(0px); opacity: 1">
+                <div>
+                  <h5>2022.01</h5>
+                  <h6>
+                    독립기념관 현충시설 기념관 안내 모바일 앱 유지보수<br />
+                    농림축산식품부 국립농업박물관 정보센터 구축 (2차)
+                  </h6>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="main-title-wrap">
+          <div class="main-title">CONTACT</div>
+        </div>
+        <div class="contact-wrap">
+          <div class="contact-tab">
+            <ul>
+              <li data-contact="0" class="active">본사</li>
+              <li data-contact="1">지사</li>
+            </ul>
+          </div>
+          <div class="contact-map-contents">
+            <div class="contact-map">
+              <div
+                id="daumRoughmapContainer1728568623831"
+                class="root_daum_roughmap root_daum_roughmap_landing"
+                style="width: 100%"
+              ></div>
+              <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                  timestamp: "1728568623831",
+                  key: "2kuun",
+                  mapHeight: "500",
+                }).render();
+              </script>
+            </div>
+            <div class="contact-location">
+              <div>
+                <img
+                  src="/images/icons/jkds-main-contact-marker.svg"
+                  alt="marker"
+                />
+                <span>
+                  (55365)전라북도 완주군 이서면 기지로 36, 스타빌딩 1동 209호
+                </span>
+              </div>
+              <div class="contact-location-private">
+                <div>
+                  <img
+                    src="/images/icons/jkds-main-contact-email.svg"
+                    alt="email"
+                  />
+                  <span>JKDS@JKDS.KR</span>
+                </div>
+                <div>
+                  <img
+                    src="/images/icons/jkds-main-contact-phone.svg"
+                    alt="phone"
+                  />
+                  <span>063-237-5041</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
-    <footer></footer>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-copyright">
+          <ul>
+            <li>
+              주식회사 제이케이데이터시스템즈 ｜ 대표이사 : 윤재근 ｜
+              사업자등록번호 : 119 -86 – 37557
+            </li>
+            <li>COPYRIGHT ⓒ (주)제이케이데이터시스템즈 All Rights Reserved</li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <img src="images/logos/footer_logo.svg" alt="JKDS" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

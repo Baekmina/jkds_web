@@ -33,9 +33,11 @@ html:root {
 
   /* background-color */
   --jkds-background-color: #f5faff;
+  --jkds-background-color-white: #ffffff;
   --jkds-background-color-black-40: #dddddd;
   --jkds-background-color-black-300: #333333;
   --jkds-background-color-black-900: #999999;
+  --jkds-background-color-primary: #241fa8;
   --jkds-background-color-footer: #333333;
 
   /* background-mask */
@@ -47,6 +49,7 @@ html:root {
 
   /* border-color */
   --jkds-border-color-black: #000000;
+  --jkds-border-color-black-40: #dddddd;
   --jkds-border-color-white: #ffffff;
   --jkds-border-color-grey: #eeeeee;
 
@@ -70,6 +73,10 @@ html:root {
   --jkds-spacing-11: 0.625rem; /* 10px */
   --jkds-spacing-12: 0.5rem; /* 8px */
   --jkds-spacing-13: 0.375rem; /* 6px */
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* font */
