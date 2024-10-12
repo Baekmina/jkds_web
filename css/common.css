@@ -138,14 +138,20 @@ p {
 
 @media (max-width: 991px) {
   .container {
-    max-width: 100%;
+    max-width: 100% !important;
     width: 100%;
     padding: 4.375rem 0.625rem;
     margin: initial;
   }
+  .main-title-wrap {
+    margin-bottom: var(--jkds-spacing-4);
+  }
+  .main-sub-title {
+    font-size: var(--jkds-font-size-5);
+  }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .container {
     padding: 1.25rem 0.625rem;
   }

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JK데이터시스템즈</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/script.js"></script>
+
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -17,13 +24,24 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- kakao map -->
     <script
       charset="UTF-8"
       class="daum_roughmap_loader_script"
       src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
     ></script>
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- slick slider -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
 
   <body>
@@ -51,16 +69,58 @@
 
     <!-- main -->
     <div id="main">
-      <div class="main-slide">
+      <div class="slider">
         <div class="main-slide-wrap">
+          <div class="background-mask"></div>
           <div class="main-slide-title-wrap">
             <h1 class="main-slide-title">
               고객의 경쟁력 강화와<br />비즈니스 성공을 이끄는 최고의 파트너
             </h1>
             <h3 class="main-slide-sub-title">제이케이데이터시스템즈</h3>
           </div>
+          <div class="main-slide-img">
+            <img
+              src="/images/images/jkds-main-slide-img01.png"
+              alt="제이케이데이터시스템즈"
+            />
+          </div>
+        </div>
+        <div class="main-slide-wrap">
           <div class="background-mask"></div>
-          <div class="main-slide-img"></div>
+          <div class="main-slide-title-wrap">
+            <h1 class="main-slide-title">
+              고객의 경쟁력 강화와<br />비즈니스 성공을 이끄는 최고의 파트너
+            </h1>
+            <h3 class="main-slide-sub-title">제이케이데이터시스템즈</h3>
+          </div>
+          <div class="main-slide-img">
+            <img
+              src="/images/images/jkds-main-slide-img02.png"
+              alt="제이케이데이터시스템즈"
+            />
+          </div>
+        </div>
+        <div class="main-slide-wrap">
+          <div class="background-mask"></div>
+          <div class="main-slide-title-wrap">
+            <h1 class="main-slide-title">
+              고객의 경쟁력 강화와<br />비즈니스 성공을 이끄는 최고의 파트너
+            </h1>
+            <h3 class="main-slide-sub-title">제이케이데이터시스템즈</h3>
+          </div>
+          <div class="main-slide-img">
+            <img
+              src="/images/images/jkds-main-slide-img02.png"
+              alt="제이케이데이터시스템즈"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav-wrap">
+        <div class="slider-nav">
+          <div class="slide-prev-btn"></div>
+          <div class="slide-custom-dot"></div>
+          <div class="slide-next-btn"></div>
         </div>
       </div>
     </div>
@@ -139,39 +199,147 @@
         <div class="main-title-wrap">
           <div class="main-title">SOLUTION</div>
         </div>
-        <div class="row g-0">
-          <div class="col-12 col-xl-6 solution-slide-left">
-            <div>
-              <h2>이동지역 모바일 안전관리 시스템</h2>
-              <div class="solution-slide-tag">
-                <div>#FOD 점검관리</div>
-                <div>#GIS 연동 기능</div>
-                <div>#장애파손 관리 기능</div>
-                <div>#보안기능 강화</div>
+        <div class="solution-slider">
+          <div class="solution-slider-wrap">
+            <div class="col-12 col-xl-6 solution-slide-left">
+              <div>
+                <h2>이동지역 모바일 안전관리 시스템</h2>
+                <div class="solution-slide-tag">
+                  <div>#FOD 점검관리</div>
+                  <div>#GIS 연동 기능</div>
+                  <div>#장애파손 관리 기능</div>
+                  <div>#보안기능 강화</div>
+                </div>
+                <div class="solution-slide-contents">
+                  <div>
+                    기존 통합 정보 시스템의 이동지역관리 모듈인 차량 장비 관리,
+                    안전 점검 활동 및 야생 동물 관리를 별도로 분리하여
+                    모바일망을 구성하여 현장 업무용 모바일 서비스를 구축합니다.
+                  </div>
+                  <div>
+                    안전 관리를 담당하는 현장 점검자 및 항공사/조업사에게 원활한
+                    현장 업무 지원 및 현장 실시간 정보 서비스를 24*265 제공하여
+                    업무의 효율성 증대 및 향상된 서비스를 구현합니다.
+                  </div>
+                </div>
               </div>
-              <div class="solution-slide-contents">
-                <div>
-                  기존 통합 정보 시스템의 이동지역관리 모듈인 차량 장비 관리,
-                  안전 점검 활동 및 야생 동물 관리를 별도로 분리하여 모바일망을
-                  구성하여 현장 업무용 모바일 서비스를 구축합니다.
-                </div>
-                <div>
-                  안전 관리를 담당하는 현장 점검자 및 항공사/조업사에게 원활한
-                  현장 업무 지원 및 현장 실시간 정보 서비스를 24*265 제공하여
-                  업무의 효율성 증대 및 향상된 서비스를 구현합니다.
-                </div>
+              <div class="solution-slide-arrow">
+                <div class="solution-slide-prev"></div>
+                <div class="solution-slide-next"></div>
               </div>
             </div>
-            <div>
-              <button></button>
-              <button></button>
+            <div class="col-12 col-xl-6 solution-slide-right">
+              <img
+                src="/images/images/jkds-main-solution-img01.png"
+                alt="이동지역 모바일 안전관리 시스템"
+              />
             </div>
           </div>
-          <div class="col-12 col-xl-6 solution-slide-right">
-            <img
-              src="/images/images/jkds-main-solution-img01.png"
-              alt="이동지역 모바일 안전관리 시스템"
-            />
+          <div class="solution-slider-wrap">
+            <div class="col-12 col-xl-6 solution-slide-left">
+              <div>
+                <h2>AOMS 시스템</h2>
+                <div class="solution-slide-tag">
+                  <div>#FOD 점검관리</div>
+                  <div>#GIS 연동 기능</div>
+                  <div>#장애파손 관리 기능</div>
+                  <div>#보안기능 강화</div>
+                </div>
+                <div class="solution-slide-contents">
+                  <div>
+                    기존 통합 정보 시스템의 이동지역관리 모듈인 차량 장비 관리,
+                    안전 점검 활동 및 야생 동물 관리를 별도로 분리하여
+                    모바일망을 구성하여 현장 업무용 모바일 서비스를 구축합니다.
+                  </div>
+                  <div>
+                    안전 관리를 담당하는 현장 점검자 및 항공사/조업사에게 원활한
+                    현장 업무 지원 및 현장 실시간 정보 서비스를 24*265 제공하여
+                    업무의 효율성 증대 및 향상된 서비스를 구현합니다.
+                  </div>
+                </div>
+              </div>
+              <div class="solution-slide-arrow">
+                <div class="solution-slide-prev"></div>
+                <div class="solution-slide-next"></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 solution-slide-right">
+              <img
+                src="/images/images/jkds-main-solution-img01.png"
+                alt="이동지역 모바일 안전관리 시스템"
+              />
+            </div>
+          </div>
+          <div class="solution-slider-wrap">
+            <div class="col-12 col-xl-6 solution-slide-left">
+              <div>
+                <h2>AI기반 검색 기능 시스템</h2>
+                <div class="solution-slide-tag">
+                  <div>#고도화된 검색기능</div>
+                  <div>#질의응답 시스템</div>
+                  <div>#자료의 자동 분류</div>
+                </div>
+                <div class="solution-slide-contents">
+                  <div>
+                    LLM을 활용하여 사용자가 입력하는 자연어 질의에 대해 정확하고
+                    관련성 높은 검색 결과를 제공합니다. 특정 작가의 작품
+                    목록이나 특정 주제의 문학 자료 등을 쉽게 검색할 수 있습니다.
+                  </div>
+                  <div>
+                    사용자와 상호작용하는 질의응답 시스템을 통해 문학 자료에
+                    대한 상세한 정보를 제공합니다. 예를 들어, "한국 현대 문학의
+                    주요 특징은 무엇인가요?"와 같은 질문에 대해 상세하고 정확한
+                    답변을 제공할 수 있습니다.
+                  </div>
+                </div>
+              </div>
+              <div class="solution-slide-arrow">
+                <div class="solution-slide-prev"></div>
+                <div class="solution-slide-next"></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 solution-slide-right">
+              <img
+                src="/images/images/jkds-main-solution-img03.png"
+                alt="AI기반 검색 기능 시스템"
+              />
+            </div>
+          </div>
+          <div class="solution-slider-wrap">
+            <div class="col-12 col-xl-6 solution-slide-left">
+              <div>
+                <h2>모듈형 전시안내관리 시스템</h2>
+                <div class="solution-slide-tag">
+                  <div>#IoT 연동 기능</div>
+                  <div>#모바일 연동 기능</div>
+                  <div>#통합 검색</div>
+                </div>
+                <div class="solution-slide-contents">
+                  <div>
+                    외국인 관람객을 위한 세계 기반을 구축하기 위해 모바일 전시
+                    안내 앱에서 다국어 콘텐츠를 강화하고, 모바일 자동전시해설
+                    안내 서비스를 통합 운영 관리하여 전국 국립박물관 내
+                    전시·문화관람 체험 환경을 구축합니다.
+                  </div>
+                  <div>
+                    박물관 관련 모든 앱 고도화를 통해 상시점검, 정기점검
+                    최적화를 통해 OS 업데이트 및 현행화 업데이트 지원을
+                    개선하고, 콘텐츠 이용현황 및 현황 분석을 통한 발전 방안 및
+                    활성화 방안을 제시합니다.
+                  </div>
+                </div>
+              </div>
+              <div class="solution-slide-arrow">
+                <div class="solution-slide-prev"></div>
+                <div class="solution-slide-next"></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 solution-slide-right">
+              <img
+                src="/images/images/jkds-main-solution-img04.png"
+                alt="모듈형 전시안내관리 시스템"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -712,8 +880,8 @@
           </div>
           <div class="work-experience-years-container">
             <ul class="work-experience-years-wrap">
-              <li class="work-experience-years" data-year="2023"></li>
-              <li class="work-experience-years active" data-year="2022"></li>
+              <li class="work-experience-years active" data-year="2023"></li>
+              <li class="work-experience-years" data-year="2022"></li>
               <li class="work-experience-years" data-year="2021"></li>
               <li class="work-experience-years" data-year="2020"></li>
               <li class="work-experience-years" data-year="2019"></li>
@@ -725,8 +893,8 @@
             <!-- 모바일 탭 -->
             <div class="work-experience-years-mobile">
               <div class="tab">
-                <div class="tab-item">2023</div>
-                <div class="tab-item active">2022</div>
+                <div class="tab-item active">2023</div>
+                <div class="tab-item">2022</div>
                 <div class="tab-item">2021</div>
                 <div class="tab-item">2020</div>
                 <div class="tab-item">2019</div>
@@ -738,7 +906,60 @@
             </div>
             <!-- 연도별 내용 -->
             <ul class="work-experience-years-contents-wrap">
-              <li style="transform: translateY(0px); opacity: 1">
+              <li>
+                <div>
+                  <h5>2023.11</h5>
+                  <h6>
+                    국립현대미술관 정보서비스 유지관리<br />
+                    국립민속박물관 보존과학실 프로그램 통합유지관리 용역<br />
+                    국립국악원 정보시스템 통합유지관리 (2차)
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2023.10</h5>
+                  <h6>
+                    전라북도콘텐츠융합진흥원 고서 공동번역 스마트워크 플랫폼
+                    구축 및 실증용역
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2023.08</h5>
+                  <h6>국립현대미술관 소장품관리시스템 고도화</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2023.07</h5>
+                  <h6>
+                    국립중앙박물관 박물관 전시안내 앱 보안 강화 및 클라우드 전환
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2023.02</h5>
+                  <h6>
+                    전라북도콘텐츠융합진흥원 홀로그램 기반 문화재 복원 및 가시화
+                    서비스 사업화 실증
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2023.01</h5>
+                  <h6>
+                    독립기념관 현충시설 기념관 안내 모바일 앱 유지보수<br />
+                    농림축산식품부 국립농업박물관 정보센터 구축 (2차)
+                  </h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
                 <div>
                   <h5>2022.11</h5>
                   <h6>
@@ -748,7 +969,7 @@
                   </h6>
                 </div>
               </li>
-              <li style="transform: translateY(0px); opacity: 1">
+              <li>
                 <div>
                   <h5>2022.10</h5>
                   <h6>
@@ -757,13 +978,13 @@
                   </h6>
                 </div>
               </li>
-              <li style="transform: translateY(0px); opacity: 1">
+              <li>
                 <div>
                   <h5>2022.08</h5>
                   <h6>국립현대미술관 소장품관리시스템 고도화</h6>
                 </div>
               </li>
-              <li style="transform: translateY(0px); opacity: 1">
+              <li>
                 <div>
                   <h5>2022.07</h5>
                   <h6>
@@ -771,7 +992,7 @@
                   </h6>
                 </div>
               </li>
-              <li style="transform: translateY(0px); opacity: 1">
+              <li>
                 <div>
                   <h5>2022.02</h5>
                   <h6>
@@ -780,12 +1001,381 @@
                   </h6>
                 </div>
               </li>
-              <li style="transform: translateY(0px); opacity: 1">
+              <li>
                 <div>
                   <h5>2022.01</h5>
                   <h6>
                     독립기념관 현충시설 기념관 안내 모바일 앱 유지보수<br />
                     농림축산식품부 국립농업박물관 정보센터 구축 (2차)
+                  </h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2021.12</h5>
+                  <h6>
+                    인천공항 모바일 A-CDM 앱 전환사업<br />
+                    국립중앙박물관 정보시스템 및 소속박물관 누리집 서버
+                    유지관리<br />
+                    국립현대미술관 정보서비스 유지관리<br />
+                    국립민속박물관 보존과학실 프로그램 기능개선 및 통합유지관리
+                    용역<br />
+                    국립국악원 정보시스템 통합 유지관리(1차)
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.11</h5>
+                  <h6>전라북도 전주시 어진박물관 실감콘텐츠 제작 설치 용역</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.10</h5>
+                  <h6>국립농업박물관 정보센터 구축(1차)</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.08</h5>
+                  <h6>국립중앙박물관 문화유산표준관리시스템 기능 고도화</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.07</h5>
+                  <h6>
+                    국립중앙박물관 박물관 전시안내 앱 콘텐츠 확대 구축 및 서비스
+                    통합운영<br />
+                    국립항공박물관 항공자료 정보허브(데이터 댐)정보화
+                    전략계획(ISP)수립 계약<br />
+                    국립중앙도서관 정보시스템 클라우드 전환<br />
+                    국립중앙박물관 실감콘텐츠 제작 사업(초상화 등)
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.05</h5>
+                  <h6>
+                    국립체육박물관 소장유물 가등록을 위한 전수조사 및 기조명세서
+                    작성(3차) 용역
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.02</h5>
+                  <h6>
+                    문화체육관광부 케이팝(K-POP) 온라인 아카데미 플랫폼(OASIS)
+                    구축<br />
+                    해양수산부 포항지방해양수산청 국립등대박물관 등대문화유산
+                    통합관리시스템 구축(3차)
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2021.01</h5>
+                  <h6>독립기념관 현충시설 모바일앱 유지보수</h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2020.12</h5>
+                  <h6>
+                    국립현대미술관 미술품 보존 DB 시스템 구축<br />
+                    한국만화영상진흥원 웹툰 아카이브 통합시스템 구축용역<br />
+                    한국전기안전공사 SLA기반 정보시스템 통합유지관리용역<br />
+                    국립국악원 정보시스템 통합유지관리<br />
+                    서울특별시 G밸리 산업박물관 정보화전략계획(ISP) 수립 용역
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2020.08</h5>
+                  <h6>
+                    국립체육박물관 소장유물 가등록을 위한 전수조사 및 기초명세서
+                    작성(2차) 용역<br />
+                    한국전기안정공사 차세대 경영정보, 일반용안점검 시스템
+                    구축용역
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2020.07</h5>
+                  <h6>
+                    한국은행 화폐박물관 전시안내 애플리케이션 제작 구축
+                    사업수주<br />
+                    국립중앙박물관 2020년 문화유산표준관리시스템 고도화 사업
+                    수주<br />
+                    국립중앙박물관 정보시스템 G클라우드 전환 컨설팅
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2020.06</h5>
+                  <h6>
+                    국립중앙박물관 2020년 박물관 전시안내 앱 서비스 통합운영
+                    사업수주<br />
+                    국립중앙도서관 2020년 국립중앙도서관 정보시스템 클라우드
+                    전환 사업 수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2020.05</h5>
+                  <h6>
+                    국립중앙박물관 2020년 디지털자료관리시스템 확대 구축사업
+                    수주<br />
+                    국방부 전쟁기념사업회 스마트폰 전시안내 서비스 유지보수 사업
+                    수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2020.03</h5>
+                  <h6>
+                    국립민속박물관 보존과학실 프로그램 유지관리 용역 사업 수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2020.01</h5>
+                  <h6>
+                    국립중앙박물관 박물관 전시안내 앱 콘텐츠 구축 사업 수주
+                  </h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2019.12</h5>
+                  <h6>
+                    인천국제공항공사 이동지역 Smart 안전관리시스템 구축사업<br />
+                    증권박물관 웹기반 사료관리시스템 구축
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2019.08</h5>
+                  <h6>
+                    해양수산부 포항지방해양수산청 국립등대박물관 등대문화유산
+                    통합관리시스템 구축 사업 수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2019.07</h5>
+                  <h6>
+                    국립중앙박물관 문화유산표준관리시스템 고도화 사업 수주<br />
+                    한국정봐진흥원 클라우드 기반 국가기념관 스마트 전시안내 체계
+                    구축
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2019.05</h5>
+                  <h6>
+                    국립중앙박물관 박물관전시안내 앱 서비스 확대구축 사업
+                    수주<br />
+                    국립중앙박물관 디지털 자료관리 시스템 확대구축 사업 수주<br />
+                    한국전기안전공사 SLA기반 정보시스템 통합 유지관리 용역 사업
+                    수주
+                  </h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2018.12</h5>
+                  <h6>국립국악원 정보시스템 통합유지관리 사업 수주</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2018.09</h5>
+                  <h6>
+                    국립아시아문화전당 미얀마 문화예술역량지원 ODA사업 수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2018.05</h5>
+                  <h6>
+                    한국정보화진흥원 국가기념관 스마트 전시안내 체계 구축 사업
+                    수주<br />
+                    국립중앙박물관 박물관전시안내 앱 서비스 확대 구축 사업
+                    수주<br />
+                    한국국제협력단 페루국가문화유산 통합 등록 및 관리시스템 구축
+                    사업 수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2018.04</h5>
+                  <h6>
+                    코스콤 HINT 서비스 개발 및 운영 용역 도급 사업 수주<br />
+                    국립민속박물관 보존처리카드 관리시스템 내 상태조사 카드
+                    DB구축 사업 수주
+                  </h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2017.12</h5>
+                  <h6>국립중앙박물관 전산시스템 유지보수</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2017.08</h5>
+                  <h6>
+                    전쟁기념관 디지털 아카이브 시스템 구축용역<br />
+                    빅데이터 활용 전략 계획 수립 및 시범과제 분석
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2017.05</h5>
+                  <h6>
+                    사이버 스마트 박물관 구축 용역 (청주고인쇄박물관)<br />
+                    문화유산표준관리시스템 고객 센터 운영
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2017.03</h5>
+                  <h6>
+                    국립민속박물관 보존처리카드 관리시스템 솔루션 개발사업<br />
+                    국립민속박물관 개발 소프트웨어 유지 보수
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2017.01</h5>
+                  <h6>국립중앙박물관 전산시스템 유지보수</h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2016.12</h5>
+                  <h6>교보증권 H/W 유지보수 사업</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2016.10</h5>
+                  <h6>지식협력단지 소장품 관리시스템 구축</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2016.08</h5>
+                  <h6>한국정보화진흥원 국립박물관 전시안내서비스</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2016.06</h5>
+                  <h6>문화유산표준관리시스템 고도화</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2016.04</h5>
+                  <h6>국기원 H/W 유지보수 사업</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2016.03</h5>
+                  <h6>NH농협캐피탈 전산시스템 유지보수</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2016.01</h5>
+                  <h6>국민연금공단 인프라 유지보수</h6>
+                </div>
+              </li>
+            </ul>
+            <ul class="work-experience-years-contents-wrap">
+              <li>
+                <div>
+                  <h5>2015.12</h5>
+                  <h6>
+                    남원시청 3단계 국가정보통신망 구축<br />
+                    전라북도 완주군 행정정보통신망 네트워크 시스템 유지보수 용역
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2015.11</h5>
+                  <h6>전라북도청 2단계 국가정보통신망 구축</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2015.10</h5>
+                  <h6>
+                    임실군청 온나라시스템 백본 설치<br />
+                    전주예수병원 DRM유지보수<br />
+                    한국전기안전공사 검사업무 통합DB고도화 용역<br />
+                    전주정보문화산업진흥원 '2015~2016년 SW융합 기술 상용화 지원
+                    사업'
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2015.07</h5>
+                  <h6>국립한글박물관 모바일 전시안내 시스템 구축</h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2015.06</h5>
+                  <h6>
+                    국립중앙박물관 비콘 활용 박물관 전시안내시스템 확대 사업
+                    수주
+                  </h6>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>2015.05</h5>
+                  <h6>
+                    국립무형유산원 유지보수<br />
+                    전주정보문화산업진흥원 2015년 선도기업육성지원사업
+                    선정(마케팅 지원사업)<br />전라북도 지역문화콘텐츠 DB구축
+                    연구용역 사업수주(전주대 산학협력단 컨소시엄)
                   </h6>
                 </div>
               </li>
@@ -804,51 +1394,104 @@
         <div class="contact-wrap">
           <div class="contact-tab">
             <ul>
-              <li data-contact="0" class="active">본사</li>
-              <li data-contact="1">지사</li>
+              <li class="active"><a href="#tab01">본사</a></li>
+              <li><a href="#tab02">지사</a></li>
             </ul>
           </div>
-          <div class="contact-map-contents">
+          <div class="contact-map-wrap">
             <div class="contact-map">
-              <div
-                id="daumRoughmapContainer1728568623831"
-                class="root_daum_roughmap root_daum_roughmap_landing"
-                style="width: 100%"
-              ></div>
-              <script charset="UTF-8">
-                new daum.roughmap.Lander({
-                  timestamp: "1728568623831",
-                  key: "2kuun",
-                  mapHeight: "500",
-                }).render();
-              </script>
-            </div>
-            <div class="contact-location">
-              <div>
-                <img
-                  src="/images/icons/jkds-main-contact-marker.svg"
-                  alt="marker"
-                />
-                <span>
-                  (55365)전라북도 완주군 이서면 기지로 36, 스타빌딩 1동 209호
-                </span>
-              </div>
-              <div class="contact-location-private">
-                <div>
-                  <img
-                    src="/images/icons/jkds-main-contact-email.svg"
-                    alt="email"
-                  />
-                  <span>JKDS@JKDS.KR</span>
-                </div>
-                <div>
-                  <img
-                    src="/images/icons/jkds-main-contact-phone.svg"
-                    alt="phone"
-                  />
-                  <span>063-237-5041</span>
-                </div>
-              </div>
+              <ul>
+                <li id="tab01">
+                  <div
+                    id="daumRoughmapContainer1728568623831"
+                    class="root_daum_roughmap root_daum_roughmap_landing"
+                    style="width: 100%"
+                  ></div>
+                  <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                      timestamp: "1728568623831",
+                      key: "2kuun",
+                      mapHeight: "500",
+                    }).render();
+                  </script>
+                  <div class="contact-location">
+                    <div>
+                      <img
+                        src="/images/icons/jkds-main-contact-marker.svg"
+                        alt="marker"
+                      />
+                      <span>
+                        (55365)전라북도 완주군 이서면 기지로 36, 스타빌딩 1동
+                        209호
+                      </span>
+                    </div>
+                    <div class="contact-location-private">
+                      <div>
+                        <img
+                          src="/images/icons/jkds-main-contact-email.svg"
+                          alt="email"
+                        />
+                        <span>JKDS@JKDS.KR</span>
+                      </div>
+                      <div>
+                        <img
+                          src="/images/icons/jkds-main-contact-phone.svg"
+                          alt="phone"
+                        />
+                        <span>063-237-5041</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li id="tab02">
+                  <div
+                    id="daumRoughmapContainer1728722923138"
+                    class="root_daum_roughmap root_daum_roughmap_landing"
+                    style="width: 100%"
+                  ></div>
+                  <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                      timestamp: "1728722923138",
+                      key: "2kvfw",
+                      mapHeight: "500",
+                    }).render();
+                  </script>
+                  <div class="contact-location">
+                    <div>
+                      <img
+                        src="/images/icons/jkds-main-contact-marker.svg"
+                        alt="marker"
+                      />
+                      <span>
+                        서울특별시 금천구 디지털로9길 65, 백상스타타워1차 1501호
+                      </span>
+                    </div>
+                    <div class="contact-location-private">
+                      <div>
+                        <img
+                          src="/images/icons/jkds-main-contact-email.svg"
+                          alt="email"
+                        />
+                        <span>JKDS@JKDS.KR</span>
+                      </div>
+                      <div>
+                        <img
+                          src="/images/icons/jkds-main-contact-phone.svg"
+                          alt="phone"
+                        />
+                        <span>02-6111-7703</span>
+                      </div>
+                      <div>
+                        <img
+                          src="/images/icons/jkds-main-contact-fax.svg"
+                          alt="fax"
+                        />
+                        <span>02-6111-3906</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -859,13 +1502,14 @@
     <footer id="footer">
       <div class="container">
         <div class="footer-copyright">
-          <ul>
-            <li>
-              주식회사 제이케이데이터시스템즈 ｜ 대표이사 : 윤재근 ｜
-              사업자등록번호 : 119 -86 – 37557
-            </li>
-            <li>COPYRIGHT ⓒ (주)제이케이데이터시스템즈 All Rights Reserved</li>
-          </ul>
+          <div class="footer-info">
+            <div>주식회사 제이케이데이터시스템즈</div>
+            <div class="line">｜</div>
+            <div>대표이사 : 윤재근</div>
+            <div class="line">｜</div>
+            <div>사업자등록번호 : 119 - 86 – 37557</div>
+          </div>
+          <p>COPYRIGHT ⓒ (주)제이케이데이터시스템즈 All Rights Reserved</p>
         </div>
         <div class="footer-logo">
           <img src="images/logos/footer_logo.svg" alt="JKDS" />
