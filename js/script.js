@@ -16,11 +16,22 @@ $(function () {
     nextArrow: $(".slide-next-btn"),
     autoplay: true,
     autoplaySpeed: 2000,
-    draggable: false,
+    draggable: true,
     centerMode: false,
     pauseOnHover: false,
     vertical: false,
     useTransform: false, // 슬라이드 깜빡거리는 현상 제거
+  });
+
+  $(".slide-autoplay-btn").click(function () {
+    if ($(this).hasClass("on")) {
+      $(".slider").slick("slickPlay");
+      $(this).html('<div class="slide-pause"></div>');
+    } else {
+      $(".slider").slick("slickPause");
+      $(this).html('<div class="slide-play"></div>');
+    }
+    $(this).toggleClass("on");
   });
 
   // solution-slider
