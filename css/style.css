@@ -57,22 +57,33 @@
 }
 .main-slide-title-wrap {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--jkds-color-white);
-  text-align: center;
+  text-align: left;
   z-index: 99;
+  max-width: calc(1320 / 16 * 1rem);
   width: 100%;
 }
+.main-slide-header-title {
+  font-size: var(--jkds-font-size-2);
+  font-weight: var(--jkds-font-weight-medium);
+  line-height: calc(70 / 16 * 1rem);
+}
 .main-slide-title {
-  font-size: var(--jkds-font-size-1);
-  font-weight: var(--jkds-font-weight-bold);
-  margin-bottom: var(--jkds-spacing-6);
-  line-height: var(--jkds-line-height-h1);
+  font-size: calc(70 / 16 * 1rem);
+  font-weight: var(--jkds-font-weight-semi-bold);
+  margin-bottom: calc(40 / 16 * 1rem);
+}
+.main-silde-driver {
+  width: calc(100 / 16 * 1rem);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0;
+  margin-bottom: calc(15 / 16 * 1rem);
 }
 .main-slide-sub-title {
-  font-size: var(--jkds-font-size-3);
+  font-size: var(--jkds-font-size-4);
   font-weight: var(--jkds-font-weight-regular);
 }
 .main-slide-img img {
@@ -153,6 +164,25 @@
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   transition-delay: 10ms;
+}
+.slide-autoplay-btn {
+  width: 0.75rem;
+  height: 0.75rem;
+  cursor: pointer;
+}
+.slide-play,
+.slide-pause {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.slide-play {
+  background-image: url("/images/icons/jkds-main-slide-play-icon.svg");
+}
+.slide-pause {
+  background-image: url("/images/icons/jkds-main-slide-pause-icon.svg");
 }
 
 /* business */
@@ -385,6 +415,39 @@
   overflow: hidden;
 }
 
+/* company */
+#company {
+  width: 100%;
+  height: fit-content;
+  background-image: url(/images/images/jkds-main-company-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--jkds-color-white);
+  text-align: center;
+}
+#company .container {
+  padding: 5.125rem 0.625rem;
+}
+#company .main-title {
+  margin-bottom: var(--jkds-spacing-6);
+}
+#company .company-content {
+  font-size: 1.25rem;
+  font-weight: var(--jkds-font-weight-regular);
+  margin-bottom: var(--jkds-spacing-3);
+  letter-spacing: 0.125rem;
+  word-break: keep-all;
+}
+#company .company-btn {
+  font-size: var(--jkds-font-size-5);
+  font-weight: var(--jkds-font-weight-bold);
+  color: var(--jkds-color-white);
+  border: 2px solid var(--jkds-border-color-white);
+  padding: 0.75rem 4.375rem;
+  background-color: transparent;
+}
+
 /* clients */
 .clients-wrap {
   display: flex;
@@ -576,6 +639,11 @@
 
 /* media query */
 @media (max-width: 1400px) {
+  /* main */
+  .main-slide-title-wrap {
+    max-width: calc(1140 / 16 * 1rem);
+  }
+
   /* business */
   .business-circle img {
     width: 3.125rem;
@@ -599,11 +667,20 @@
 }
 
 @media (max-width: 1200px) {
+  /* main */
+  .main-slide-title-wrap {
+    max-width: calc(960 / 16 * 1rem);
+    top: 50%;
+  }
+  .slider-nav-wrap {
+    bottom: 10%;
+  }
+
   /* business */
   .business-circle-wrap {
     margin-top: 3.125rem !important;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   .business-circle {
     width: calc((100% - 6.25rem) / 2) !important;
@@ -640,13 +717,20 @@
   }
 
   /* main */
+  .main-slide-title-wrap {
+    padding: 0.625rem;
+  }
+  .main-slide-header-title {
+    font-size: var(--jkds-font-size-3);
+    line-height: calc(50 / 16 * 1rem);
+  }
+  .main-slide-sub-title {
+    font-size: var(--jkds-font-size-5);
+  }
   .main-slide-title,
   .business-title {
     font-size: var(--jkds-font-size-2);
     line-height: var(--jkds-line-height-auto);
-  }
-  .main-slide-title-wrap {
-    padding: 0.625rem;
   }
   #main .slick-dots {
     gap: var(--jkds-spacing-11);
@@ -765,6 +849,17 @@
   }
 
   /* main */
+  .main-slide-title-wrap {
+    text-align: center;
+  }
+  .main-slide-header-title {
+    font-size: calc(20 / 16 * 1rem);
+    line-height: calc(30 / 16 * 1rem);
+  }
+  .main-silde-driver {
+    margin: 0 auto;
+    margin-bottom: calc(10 / 16 * 1rem);
+  }
   .main-slide-title,
   .business-title {
     font-size: var(--jkds-font-size-3);
